@@ -1,0 +1,130 @@
+/* Configurações Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f7f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    background: linear-gradient(135deg, #1e4620, #2e7d32);
+    color: white;
+    text-align: center;
+    padding: 2.5rem 1rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Conteúdo Principal */
+.container {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+section {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+h2 {
+    color: #2e7d32;
+    margin-bottom: 1rem;
+}
+
+/* Simulador e Botões */
+.botoes-controle {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    margin: 1.5rem 0;
+}
+
+button {
+    background-color: #e0e0e0;
+    border: 2px solid #bdbdbd;
+    padding: 10px;
+    font-size: 0.95rem;
+    font-weight: bold;
+    color: #424242;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button.ativo {
+    background-color: #4caf50;
+    color: white;
+    border-color: #388e3c;
+}
+
+/* Barras de Progresso */
+.resultados {
+    margin-top: 2rem;
+}
+
+.barra-status {
+    margin-bottom: 1.5rem;
+}
+
+.barra-status span {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.progresso {
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 20px;
+    width: 100%;
+}
+
+#barra-prod {
+    background-color: #f57c00; /* Laranja para produção */
+    height: 100%;
+    transition: width 0.5s ease;
+}
+
+#barra-amb {
+    background-color: #2e7d32; /* Verde para ambiente */
+    height: 100%;
+    transition: width 0.5s ease;
+}
+
+/* Caixa de Feedback */
+.mensagem-feedback {
+    background-color: #e8f5e9;
+    border-left: 5px solid #2e7d32;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 4px;
+    font-style: italic;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #212121;
+    color: #9e9e9e;
+    font-size: 0.9rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

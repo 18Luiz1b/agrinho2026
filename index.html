@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrinho 2026 - Agro Forte, Futuro Sustentável</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>EcoAgro</h1>
+        <p>Equilíbrio entre Produção e Meio Ambiente</p>
+    </header>
+
+    <main class="container">
+        <section class="intro">
+            <h2>O Desafio do Século XXI</h2>
+            <p>Como produzir alimentos para uma população crescente e, ao mesmo tempo, proteger o nosso planeta? A resposta está no <strong>Agro Sustentável</strong>: o uso de tecnologia, conservação do solo e respeito à biodiversidade.</p>
+        </section>
+
+        <section class="simulador">
+            <h2>Simulador de Práticas Sustentáveis</h2>
+            <p>Ative as práticas agrícolas abaixo e veja o impacto no equilíbrio entre produção e natureza:</p>
+            
+            <div class="botoes-controle">
+                <button onclick="alternarPratica('tecnologia', 15, 5)">Adoção de Drones e IA</button>
+                <button onclick="alternarPratica('solo', 10, 20)">Plantio Direto e Rotação de Culturas</button>
+                <button onclick="alternarPratica('agua', -5, 25)">Manejo Eficiente de Irrigação</button>
+                <button onclick="alternarPratica('biologico', 5, 20)">Defensivos Biológicos</button>
+            </div>
+
+            <div class="resultados">
+                <div class="barra-status">
+                    <span>Produtividade: <span id="val-prod">50</span>%</span>
+                    <div class="progresso"><div id="barra-prod" style="width: 50%;"></div></div>
+                </div>
+                <div class="barra-status">
+                    <span>Preservação Ambiental: <span id="val-amb">50</span>%</span>
+                    <div class="progresso"><div id="barra-amb" style="width: 50%;"></div></div>
+                </div>
+            </div>
+
+            <div class="mensagem-feedback">
+                <p id="feedback">Mova o agro rumo ao futuro! Ative as práticas acima.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido para o Concurso Agrinho &copy; 2026 - Ensino Médio</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
